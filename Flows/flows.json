@@ -1,0 +1,57 @@
+[
+    {
+        "id": "8216f294e3d73e41",
+        "type": "ui_gauge",
+        "z": "34cb7e99289f9dde",
+        "name": "",
+        "group": "5934873b602e12c1",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 330,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "5934873b602e12c1",
+        "type": "ui_group",
+        "name": "Sensors",
+        "tab": "df7aab950081c0b8",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "df7aab950081c0b8",
+        "type": "ui_tab",
+        "name": "SmartLab",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "30ce45fa315bcb66",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
