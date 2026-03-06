@@ -26,22 +26,12 @@ Ce projet IoT utilise un **Raspberry Pi** pour :
 
 Architecture
 
+## Architecture du projet
 
+Voici l'architecture du système IoT utilisé dans ce projet :
 
-```mermaid
-flowchart LR
-  Phone[iPhone / navigateur] -->|HTTP| NR[Node-RED Dashboard]
+![Architecture IoT](Images/architecture_iot.png)
 
-  Pi[Pi 01] -->|Publie| MQTT[(MQTT Broker\nlocalhost:1883)]
-  NR -->|Publie cmd\n{"state":"on/off"}| MQTT
-  MQTT -->|cmd| SubLED[subscriber_led.py]
-  SubLED -->|Publie state (retained)| MQTT
-  MQTT -->|state| NR
-
-  Pi -->|temperature {"value":..,"unit":"C"}| MQTT
-  MQTT -->|temperature| NR
-  MQTT --> Logger[logger_mariadb.py]
-  Logger --> DB[(MariaDB\ntelemetry.ts_utc)]
 
 
 
