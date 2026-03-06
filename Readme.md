@@ -118,12 +118,12 @@ Technologies
 •	MariaDB
 
 
-## Preuves
+## 7.4 Preuves
 
 ### MQTT Dash (jauge + switch)
 
-![MQTT Dash](images/mqtt_dash.png)
+<img src="Images/mqtt_dash.png" width="600">
 
-### Données enregistrées dans MariaDB
+### Données stockées dans MariaDB
 
-![MariaDB Query](images/mariadb_query.png)
+<img src="Images/mariadb_query.png" width="600">
