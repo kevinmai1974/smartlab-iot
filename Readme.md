@@ -101,6 +101,8 @@ Requête SQL :
 SELECT * FROM telemetry ORDER BY ts_utc DESC LIMIT 10;
 
 
+
+
 Structure du projet
 
 smartlab-iot
@@ -126,3 +128,12 @@ Technologies
 •	MariaDB
 
 
+## Preuves
+
+### MQTT Dash (jauge + switch)
+
+![MQTT Dash](images/mqtt_dash.png)
+
+### Données enregistrées dans MariaDB
+
+![MariaDB Query](images/mariadb_query.png)
